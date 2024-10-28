@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de LSP SEÑAS IA</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Reconocimiento de Lenguaje de Señas</h1>
+        <div class="video-container">
+            <h2>Video en Vivo</h2>
+            <img id="video" src="{{ url_for('video_feed') }}" style="width: 640px; height: 480px;" alt="Video en vivo">
+        </div>
+        <div id="subtitles" class="subtitles"></div>
+    </div>
+</body>
+</html>
